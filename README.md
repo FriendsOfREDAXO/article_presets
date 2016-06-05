@@ -1,1 +1,3 @@
-# auto-add-module
+# Article Presets
+
+Artikelvorlagen automatisch einfügen
