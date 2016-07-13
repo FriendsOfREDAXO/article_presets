@@ -1,0 +1,12 @@
+package: article_presets
+version: '1.0.0'
+author: Friends Of REDAXO
+supportpage: github.com/FriendsOfREDAXO/article_presets
+
+page:
+    title: 'translate:title'
+    perm: article_presets[]
+    pjax: true
+    icon: rex-icon fa-files-o
+    subpages:
+        profiles: { title: 'translate:profiles', perm: rex_redactor2[profiles] }
