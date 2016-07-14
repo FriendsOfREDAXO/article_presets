@@ -1,3 +1,3 @@
 # Article Presets
 
-Artikelvorlagen automatisch einfügen
+Artikelvorlagen automatisch einfügen anhand Templates oder Kategorien
