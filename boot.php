@@ -9,30 +9,27 @@
 			unset($sql);
 			
 			foreach ($profiles as $profile) {
-				$copy = false;
+				$copyStatusCategories = true;
+				$copyStatusTemplates = true;
 				
 				
 				if ($profile['categories'] != '') {
 					$profile['categories'] = explode(',', $profile['categories']);
 					
-					if (in_array($params['data']['category_id'], $profile['categories'])) {
-						$copy = true;
-					} else {
-						$copy = false;
+					if (!in_array($params['data']['category_id'], $profile['categories'])) {
+						$copyStatusCategories = false;
 					}
 				}
 				
 				if ($profile['templates'] != '') {
 					$profile['templates'] = explode('|', substr($profile['templates'],1,-1));
 					
-					if (in_array($params['data']['template_id'], $profile['templates'])) {
-						$copy = true;
-					} else {
-						$copy = false;
+					if (!in_array($params['data']['template_id'], $profile['templates'])) {
+						$copyStatusTemplates = false;
 					}
 				}
 				
-				if ($copy === true) {
+				if ($copyStatusCategories === true && $copyStatusTemplates === true) {
 					rex_content_service::copyContent($profile['articlereference'], $params['id'], $params['clang'], $params['clang']);
 				}
 			}
