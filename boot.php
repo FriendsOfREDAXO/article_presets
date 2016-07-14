@@ -33,10 +33,7 @@
 				}
 				
 				if ($copy === true) {
-					//todo: copy $profile['articlereference']
-					
-					//evtl. Anlegen abbrechen und kopieren?
-					//rex_article_service::copyArticle($id, $to_cat_id)
+					rex_content_service::copyContent($profile['articlereference'], $params['id'], $params['clang'], $params['clang']);
 				}
 			}
 		});
