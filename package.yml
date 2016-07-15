@@ -9,4 +9,4 @@ page:
     pjax: true
     icon: rex-icon fa-files-o
     subpages:
-        profiles: { title: 'translate:profiles', perm: rex_redactor2[profiles] }
+        profiles: { title: 'translate:profiles', perm: article_presets[profiles] }
