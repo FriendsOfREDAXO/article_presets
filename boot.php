@@ -12,9 +12,8 @@
 				$copyStatusCategories = true;
 				$copyStatusTemplates = true;
 				
-				
 				if ($profile['categories'] != '') {
-					$profile['categories'] = explode(',', $profile['categories']);
+					$profile['categories'] = explode('|', substr($profile['categories'],1,-1));
 					
 					if (!in_array($params['data']['category_id'], $profile['categories'])) {
 						$copyStatusCategories = false;

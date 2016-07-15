@@ -42,8 +42,13 @@
 		//End - add name-field
 		
 		//Start - add categories-field
-			$field = $form->addLinklistField('categories');
+			$field = $form->addSelectField('categories');
 			$field->setLabel($this->i18n('profiles_label_categories'));
+			$field->setSelect(new rex_category_select());
+			
+			$select = $field->getSelect();
+			$select->setMultiple();
+			$select->setSize(10);
 		//End - add categories-field
 		
 		//Start - add templates-field
