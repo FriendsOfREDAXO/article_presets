@@ -28,9 +28,20 @@
 					}
 				}
 				
+				if (rex_addon::get('metainfo')->isAvailable()) {
+					//Start - get all metainfo-fields
+						$sql = rex_sql::factory();
+						$fields = array_column($sql->getArray('SHOW COLUMNS FROM `'.rex::getTablePrefix().'article` WHERE `Field` like "art_%"'), 'Field');
+						unset($sql);
+					//End - get all metainfo-fields
+					
+					rex_article_service::copyMeta($profile['articlereference'], $params['id'], $params['clang'], $params['clang'], $fields);
+				}
+				
 				if ($copyStatusCategories === true && $copyStatusTemplates === true) {
 					rex_content_service::copyContent($profile['articlereference'], $params['id'], $params['clang'], $params['clang']);
 				}
+
 			}
 		});
 	}
