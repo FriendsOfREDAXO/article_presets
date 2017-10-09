@@ -1,0 +1,16 @@
+article_presets_title = Article presets
+
+#subpage profiles
+article_presets_profiles = Profiler
+article_presets_profiles_norowsmessage = Inga profiler hittades
+
+article_presets_profiles_column_name = Namn
+
+article_presets_profiles_formcaption_add = Tillfoga profil
+article_presets_profiles_formcaption_edit = Redigera profil
+
+article_presets_profiles_label_name = Namn
+article_presets_profiles_label_description = Beskrivning
+article_presets_profiles_label_categories = Kategorier
+article_presets_profiles_label_templates = Mallar
+article_presets_profiles_label_articlereference = Artikelmall
