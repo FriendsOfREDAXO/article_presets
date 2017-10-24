@@ -1,0 +1,16 @@
+article_presets_title = 
+
+#subpage profiles
+article_presets_profiles = profilo
+article_presets_profiles_norowsmessage = Non é stato trovato nessun profilo
+
+article_presets_profiles_column_name = nome
+
+article_presets_profiles_formcaption_add = aggiungi profilo
+article_presets_profiles_formcaption_edit = modifica profilo
+
+article_presets_profiles_label_name = nome
+article_presets_profiles_label_description = descrizione
+article_presets_profiles_label_categories = categoria
+article_presets_profiles_label_templates = templates
+article_presets_profiles_label_articlereference = articolo modello
