@@ -1,0 +1,16 @@
+article_presets_title = Presets de artículos
+
+#subpage profiles
+article_presets_profiles = Perfil
+article_presets_profiles_norowsmessage = No se encontraron perfiles
+
+article_presets_profiles_column_name = Nombre
+
+article_presets_profiles_formcaption_add = Añadir perfil
+article_presets_profiles_formcaption_edit = Editar perfil
+
+article_presets_profiles_label_name = Nombre
+article_presets_profiles_label_description = Descripción
+article_presets_profiles_label_categories = Categorías
+article_presets_profiles_label_templates = Plantillas
+article_presets_profiles_label_articlereference = Plantilla del artículo
