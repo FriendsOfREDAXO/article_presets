@@ -10,3 +10,6 @@ page:
     icon: rex-icon fa-files-o
     subpages:
         profiles: { title: 'translate:profiles', perm: article_presets[profiles] }
+
+requires:
+    redaxo: '>=5.1.0'
