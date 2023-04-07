@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 rex_sql_table::get(rex::getTable('articlepresets_profiles'))
     ->ensureColumn(new rex_sql_column('id', 'int(11) unsigned', false, null, 'auto_increment'))
     ->ensureColumn(new rex_sql_column('name', 'varchar(30)', false, ''))
